@@ -1,0 +1,304 @@
+body{
+    background: url(./assets/ArkNights.jpeg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: wheat;
+    overflow: hidden;
+}
+
+h2{
+  font-family: Yuanti SC;
+}
+
+.tip{
+  font-family: Yuanti SC;
+  position: absolute;
+  right:290px;
+  top:67%;
+  color:darkgray;
+}
+
+.oldcat{
+  position: absolute;
+  top:64%;
+  right:210px;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  &:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #e172af, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: pink;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: #e172af;
+    background-color: #e172af;
+  }
+}
+
+#title1{
+    left:550px; 
+    font-size: 4rem; 
+    -webkit-text-stroke-width: 3px;
+    margin: 0;
+    font-style: italic;
+    font-family: Yuanti SC;
+    color: transparent;
+    background: linear-gradient(to right, #23c6ee, #e172af, #ffffff);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    letter-spacing: 0.4rem;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+#title2{
+  left:640px; 
+  font-size: 6rem; 
+  -webkit-text-stroke-width: 5px;
+  margin: 0;
+  font-style: italic;
+  font-family: Yuanti SC;
+  color: transparent;
+  background: linear-gradient(to right, #23c6ee, #e172af, #ffffff);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+  letter-spacing: 0.4rem;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+#title3{
+    margin: 0;
+    left:1200px;
+    font-size: 4rem;
+    font-style: italic;
+    font-family: Yuanti SC;
+    color: transparent;
+    background: linear-gradient(to right, #e172af,#23c6ee, #ffffff);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    letter-spacing: 0.4rem;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+#quiz-container {
+  background-color:transparent;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  width: 1300px;
+  height: 550px;
+  border-radius: 5%;
+  display: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  
+}
+
+
+
+
+/* CSS */
+.question {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  width: 900px;
+  height: 350px;
+  border-radius: 5%;
+  display: none;
+  
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.question.active {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  width: 900px;
+  height: 350px;
+  border-radius: 5%;
+  display: block;
+  
+  background:linear-gradient(to bottom right,  #60d1ed , #ffffff);;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #e172af 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #23c6ee;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  letter-spacing: 0.4rem;  
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: "开 测";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #e172af 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+.button-50,
+.button-50:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #e172af 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #23c6ee;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  letter-spacing: 0.4rem;  
+}
+
+.button-50:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: "下 一 题";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #e172af 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-50:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}

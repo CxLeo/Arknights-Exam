@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>测测你的！</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div >
+      <h1 id="title1">你是</h1>
+      <h1 id="title2">明日方舟高手</h1>
+      <h3 id="title3">吗？</h3>
+    </div>
+
+    <button class="button-49" id="start" style="margin-left: 1100px; margin-top: 10%;" onclick="eraseTitle()">
+      开测
+    </button>
+
+    <div id="quiz-container">
+
+      <div class="question active" id="question1">
+        <h2> 1.&nbsp干员<font color="purple">“慕斯”</font>是陪伴了无数新手博士的法伤近卫，在低配攻略中总是能看到她的身影，那么请问细心的博士，<font color="purple">“慕斯”</font>有几条尾巴呢?</h2> 
+        <hr class="hr-text" data-content="a">
+        <input type="radio" name="q1" value="b"> A. 1条 <br><br>
+        <input type="radio" name="q1" value="a"> B. 2条 <br><br>
+        <input type="radio" name="q1" value="c"> C. 3条 <br><br>
+        <input type="radio" name="q1" value="d"> D. 4条 <br><br>
+        <input type="radio" name="q1" value="e"> E. 我不到啊 <br>
+        <h6 class="tip">也许她知道？-></h6>
+        <img src="./assets/oldcat.png" class="oldcat" title="泰拉大地广袤无际，我不能说自己已经踏遍了所有角落，但是我的记忆中并不存在4条尾巴的菲林，博士。">
+        <button style="position:absolute;right: 5%; bottom:5%" class="button-50" onclick="checkAnswer('q1')">下 一 题</button>
+      </div>
+
+      <div class="question" id="question2">
+        <h2> 2.&nbsp 干员<font color="orange">信赖值</font>对于增加干员的能力值十分重要，获得新干员的第一瞬间，我们就想方设法拉满<font color="orange">信赖值</font>，那么请问以下情况中，哪个<u>不会</u>增加干员的<font color="orange">信赖值</font>?</h2> 
+        <hr class="hr-text" data-content="a">
+        <input type="radio" name="q2" value="a"> A. 干员A被置于助战位，被设为助战干员 <br><br>
+        <input type="radio" name="q2" value="b"> B. 干员A编入作战队伍并完成关卡，但是一次都没有部署该干员 <br><br>
+        <input type="radio" name="q2" value="c"> C. 干员A作为协助者置于训练室，但并未进行(协助)技能专精 <br><br>
+        <input type="radio" name="q2" value="d"> D. 干员A作为协助者置于训练室，训练室中有正在专精技能的其他干员，但干员A并未携带任何辅助专精技能（如：小刻） <br><br>
+        <input type="radio" name="q2" value="e"> E. 我不到啊 <br>
+        <h6 class="tip">也许她知道？-></h6>
+        <img src="./assets/oldcat.png" class="oldcat" title="凡是亲眼过你指挥的干员，都会增添一份对你指挥能力的信任......我也一样，博士。">
+        <button style="position:absolute;right: 5%; bottom:5%" class="button-50" onclick="checkAnswer('q2')">下 一 题</button>
+      </div>
+
+      <div class="question" id="question3">
+        <h2> 3.&nbsp 有经验的博士从不会忽视基建<font color=#0037de>无人机</font>对生产效率的影响，请问一架<font color=#0037de>无人机</font>可以减少几分钟工时?</h2> 
+        <hr class="hr-text" data-content="a">
+        <input type="radio" name="q3" value="b"> A. 2分钟<br><br>
+        <input type="radio" name="q3" value="a"> B. 3分钟 <br><br>
+        <input type="radio" name="q3" value="c"> C. 3.5分钟 <br><br>
+        <input type="radio" name="q3" value="d"> D. 4分钟 <br><br>
+        <input type="radio" name="q3" value="e"> E. 我不到啊 <br>
+        <h6 class="tip">也许她知道？-></h6>
+        <img src="./assets/oldcat.png" class="oldcat" title="可露希尔曾提出过要将无人机的性能提升到4分钟/架，不过她索要的经费远远超出我的预期......你知道什么吗，博士？">
+        <button style="position:absolute;right: 5%; bottom:5%" class="button-50" onclick="checkAnswer('q3')">下 一 题</button>
+      </div>
+
+      <div class="question" id="question4">
+        <h2> 4.&nbsp 明日方舟的世界观宏大，各方势力错综复杂，而<font color="green">关系网</font>不仅记录了势力归属，还为二创者提供了数不清的乐子，请问以下哪个干员，在<font color="green">关系网</font>中<u>不属于</u>“伊比利亚”?</h2> 
+        <hr class="hr-text" data-content="a">
+        <input type="radio" name="q4" value="d"> A. 深靛<br><br>
+        <input type="radio" name="q4" value="b"> B. 絮雨 <br><br>
+        <input type="radio" name="q4" value="c"> C. 格劳克斯 <br><br>
+        <input type="radio" name="q4" value="a"> D. 极境 <br><br>
+        <input type="radio" name="q4" value="e"> E. 我不到啊 <br>
+        <h6 class="tip">也许她知道？-></h6>
+        <img src="./assets/oldcat.png" class="oldcat" title="干员深靛是怎么来到罗德岛的？她曾是海滨灯塔的见习术士，后因蓝毒邀请，离开了伊比利亚。这些事你应该在档案里看到过才对......晚上再来我这里做一次脑功能检查，博士。">
+        <button style="position:absolute;right: 5%; bottom:5%" class="button-50" onclick="checkAnswer('q4')">下 一 题</button>
+      </div>
+
+      <div class="question" id="question5">
+        <h2> 5.&nbsp <font color="gold">近卫</font>方舟是一款<font color="gold">近卫</font>非常多的游戏，<font color="gold">近卫</font>们各司其职，共同维护了罗德岛的安宁，那么请问，以下<font color="gold">近卫</font>中，法术抗性最高的是哪一位?</h2> 
+        <hr class="hr-text" data-content="a">
+        <input type="radio" name="q5" value="d"> A. 棘刺<br><br>
+        <input type="radio" name="q5" value="b"> B. 玛恩纳 <br><br>
+        <input type="radio" name="q5" value="c"> C. 史尔特尔 <br><br>
+        <input type="radio" name="q5" value="a"> D. 剑形态阿米娅 <br><br>
+        <input type="radio" name="q5" value="e"> E. 我不到啊 <br>
+        <h6 class="tip">也许她知道？-></h6>
+        <img src="./assets/oldcat.png" class="oldcat" title="......（凯尔希看着你，不再言语）">
+        <button style="position:absolute;right: 5%; bottom:5%" class="button-50" onclick="checkAnswer('q5')">下 一 题</button>
+      </div>
+
+      <div id="score" class="question">
+        <h1 id="total-score">0</h1>
+        <img src="./assets/oldcat.png" class="oldcat" title="......">
+        <h2 id="comment">0</h2>
+      </div>
+
+    </div>
+    
+  
+  <script>
+    var currentQuestion = 1;
+    var score = 0;
+
+    function eraseTitle() {
+      var one = document.getElementById("title1");
+      var two = document.getElementById("title2");
+      var three = document.getElementById("title3");
+      var start = document.getElementById("start");
+      one.style.display = "none";
+      two.style.display = "none";
+      three.style.display = "none";
+      start.style.display = "none";
+
+      var quiz = document.getElementById("quiz-container");
+      quiz.style.display = "block";
+    }
+
+    
+    function checkAnswer(questionId) {
+        var selectedOption = document.querySelector(`input[name=${questionId}]:checked`);
+
+        if (selectedOption && selectedOption.value === "a") {
+          score++;
+        }else if (selectedOption && selectedOption.value === "e"){
+          score--;
+        }
+
+        currentQuestion++;
+        showQuestion();
+    }
+
+    function showQuestion() {
+        var questions = document.querySelectorAll('.question');
+        questions.forEach(function (question) {
+            question.classList.remove('active');
+        });
+
+        var currentQuestionElement = document.getElementById(`question${currentQuestion}`);
+        if (currentQuestionElement) {
+            currentQuestionElement.classList.add('active');
+        } else {
+            showScore();
+        }
+    }
+
+    function showScore() {
+        var scoreElement = document.getElementById('score');
+        scoreElement.classList.add('active');
+        var totalScoreElement = document.getElementById('total-score');
+        totalScoreElement.innerHTML = "博士，你的最终得分是 "+score*20+"/100 。";
+
+        var commentElement = document.getElementById('comment');
+        if (score==5){
+          commentElement.innerHTML="恭喜，你--就是明日方舟高手！自豪吧，这片大地以你为荣！"
+        }else if (score==-5){
+          commentElement.innerHTML="啥都不知道你是个锤子博士！云子是吧云子是吧云子是吧云子是吧云子是吧云子是吧云子是吧云子是吧！"
+        }else{
+          commentElement.innerHTML="一般般吧。"
+        }
+        
+    }
+
+    showQuestion();
+
+  </script>
+</body>
+</html>
